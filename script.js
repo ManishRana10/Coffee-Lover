@@ -1,18 +1,18 @@
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
-document.querySelector('.contact-form').addEventListener("submit",submitForm);
-function submitForm(e){
-    e.preventDefault();
+// document.querySelector('.contact-form').addEventListener("submit",submitForm);
+// function submitForm(e){
+//     e.preventDefault();
 
-    let name = document.querySelector('.name').value;
-    let number = document.querySelector('.number').value;
-    let email = document.querySelector('.email').value;
-    let address = document.querySelector('.address').value;
-    let coffees = document.querySelector(".yourcoffee").value;
-    document.querySelector(".contact-form").reset();
-    sendEmail(name,number,email,address,coffees);
-}
+//     let name = document.querySelector('.name').value;
+//     let number = document.querySelector('.number').value;
+//     let email = document.querySelector('.email').value;
+//     let address = document.querySelector('.address').value;
+//     let coffees = document.querySelector(".yourcoffee").value;
+//     document.querySelector(".contact-form").reset();
+//     sendEmail(name,number,email,address,coffees);
+// }
 
 menu.onclick = () =>{
     menu.classList.toggle('fa-times');
@@ -99,16 +99,16 @@ var swiper = new Swiper(".home-slider", {
   window.onload = fadeOut;
 
 
-  function sendEmail(name,number,email,address,coffees){
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username:"manishrana3343667@gmail.com",
-        Password:"zzepfnzafotztfdx",
-        To:`${email}`,
-        From:"manishrana3343667@gmail.com",
-        Subject:`Coffee Lover sent you a message`,
-        Body:`Name:${name} <br/> Number:${number} <br/> Email:${email} <br/> Address:${address} <br/> Your Coffee:${coffees}`,
+//   function sendEmail(name,number,email,address,coffees){
+//     Email.send({
+//         Host: "smtp.gmail.com",
+//         Username:"manishrana3343667@gmail.com",
+//         Password:"zzepfnzafotztfdx",
+//         To:`${email}`,
+//         From:"manishrana3343667@gmail.com",
+//         Subject:`Coffee Lover sent you a message`,
+//         Body:`Name:${name} <br/> Number:${number} <br/> Email:${email} <br/> Address:${address} <br/> Your Coffee:${coffees}`,
 
-    }).then((message) => alert("mail sent successfully"))
-}
+//     }).then((message) => alert("mail sent successfully"))
+// }
  

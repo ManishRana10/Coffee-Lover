@@ -78,8 +78,15 @@ header .logo{
     font-size: 2.5rem;
     font-weight: bolder;
 }
-header .logo i{
+/* header .logo i{
     color: var(--green);
+} */
+header .logo img{
+    /* font-size: 2.5rem; */
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    /* margin-top: 10px; */
 }
 header .navbar a{
     font-size: 1.7rem;
